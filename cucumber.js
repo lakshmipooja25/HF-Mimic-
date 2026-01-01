@@ -7,6 +7,5 @@ module.exports = {
     "--format html:reports/cucumber_report.html",
     "--format json:reports/report.json",
     "e2e/features/**/*.feature"
-
   ].join(" ")
 };
