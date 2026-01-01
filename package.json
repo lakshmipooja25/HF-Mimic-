@@ -1,0 +1,28 @@
+{
+  "name": "hartford_mimic_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "cucumber:test": "cucumber-js --format json:reports/report.json",
+    "cucumber:report": "node scripts/generate-html-report.js",
+    "cucumber:all": "npm run cucumber:test && npm run cucumber:report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@cucumber/cucumber": "^12.5.0",
+    "@playwright/test": "^1.57.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "cucumber-html-reporter": "^6.0.0",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "strip-ansi": "^7.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
